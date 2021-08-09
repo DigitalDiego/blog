@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: #2a2a2a;
+}
+
+* body {
+  background: linen;
+}
+
+.header {
+  width: 100%;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1em;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 20000;
+  background: linen;
+  -webkit-box-shadow: 0 1px 10px #2d3644;
+          box-shadow: 0 1px 10px #2d3644;
+}
+
+.header .header-title {
+  font-family: "Pacifico", sans-serif;
+}
+
+.header button {
+  width: 2.2em;
+  height: 2.2em;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: none;
+  background: #2a2a2a;
+  cursor: pointer;
+}
+
+.header button i {
+  color: linen;
+}
+
+.blog-name-section {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  z-index: 50000;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.blog-name-section header {
+  display: none;
+}
+
+.blog-name-section .blog-name {
+  margin-bottom: 0.5em;
+  border: 2px solid #2a2a2a;
+  padding: 0.2em 0.5em;
+  font-size: 1em;
+}
+
+.blog-name-section .add-name-btn {
+  font-size: 1em;
+  border: 2px solid #2a2a2a;
+  padding: 0 2em;
+  cursor: pointer;
+  background: #fff;
+  color: #2a2a2a;
+}
+
+.post-list {
+  width: 100%;
+  min-height: 90vh;
+  padding: 1em 1em 0 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 10vh;
+}
+
+.post {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #2a2a2a;
+  margin-bottom: 1em;
+  position: relative;
+}
+
+.post .post-header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 80%;
+  padding: 0.8em 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.post .post-header .post-title {
+  font-size: 1.2em;
+}
+
+.post .post-content {
+  display: none;
+}
+
+.post .post-date {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 0.5em;
+}
+
+.post .delete-btn {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  background: #2a2a2a;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+.post .delete-btn i {
+  color: linen;
+  font-size: 0.9em;
+}
+
+.post-section {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 30000;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 1em;
+}
+
+.post-section header {
+  width: 100%;
+  height: 10vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1em;
+}
+
+.post-section header .close-post-section-btn {
+  width: 2.2em;
+  height: 2.2em;
+  border-radius: 50%;
+  cursor: pointer;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  border: none;
+  background: #2a2a2a;
+  cursor: pointer;
+}
+
+.post-section header .close-post-section-btn i {
+  color: linen;
+}
+
+.post-section .post-title {
+  width: 100%;
+  padding: 0.2em 0.5em;
+  font-size: 1em;
+  border: 2px solid #2a2a2a;
+  background: #fff;
+  margin-bottom: 1em;
+}
+
+.post-section textarea {
+  width: 100%;
+  height: 200px;
+  border: 2px solid #2a2a2a;
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
+  resize: none;
+}
+
+.post-section .add-post-btn {
+  padding: 0em 2em;
+  font-size: 1em;
+  border: 2px solid #2a2a2a;
+  color: #2a2a2a;
+  background: #fff;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

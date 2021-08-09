@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: #2a2a2a;
+  body {
+    background: linen;
+  }
+}
+// Header
+.header {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1em;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 20000;
+  background: linen;
+  box-shadow: 0 1px 10px rgb(45, 54, 68);
+  .header-title {
+    font-family: "Pacifico", sans-serif;
+  }
+  button {
+    width: 2.2em;
+    height: 2.2em;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    border: none;
+    background: #2a2a2a;
+    cursor: pointer;
+    i {
+      color: linen;
+    }
+  }
+}
+// Name Section
+.blog-name-section {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  z-index: 50000;
+  flex-direction: column;
+  header {
+    display: none;
+  }
+  .blog-name {
+    margin-bottom: 0.5em;
+    border: 2px solid #2a2a2a;
+    padding: 0.2em 0.5em;
+    font-size: 1em;
+  }
+  .add-name-btn {
+    font-size: 1em;
+    border: 2px solid #2a2a2a;
+    padding: 0 2em;
+    cursor: pointer;
+    background: #fff;
+    color: #2a2a2a;
+  }
+}
+// Post List
+.post-list {
+  width: 100%;
+  min-height: 90vh;
+  padding: 1em 1em 0 1em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10vh;
+}
+// Post
+.post {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #2a2a2a;
+  margin-bottom: 1em;
+  position: relative;
+  .post-header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 80%;
+    padding: 0.8em 0.5em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    .post-title {
+      font-size: 1.2em;
+    }
+  }
+  .post-content {
+    display: none;
+  }
+  .post-date {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 0.5em;
+  }
+  .delete-btn {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    background: #2a2a2a;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    z-index: 10000;
+    i {
+      color: linen;
+      font-size: 0.9em;
+    }
+  }
+}
+// Post Section
+.post-section {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 30000;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 1em;
+  header {
+    width: 100%;
+    height: 10vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 1em;
+    .close-post-section-btn {
+      width: 2.2em;
+      height: 2.2em;
+      border-radius: 50%;
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      border: none;
+      background: #2a2a2a;
+      cursor: pointer;
+      i {
+        color: linen;
+      }
+    }
+  }
+  .post-title {
+    width: 100%;
+    padding: 0.2em 0.5em;
+    font-size: 1em;
+    border: 2px solid #2a2a2a;
+    background: #fff;
+    margin-bottom: 1em;
+  }
+  textarea {
+    width: 100%;
+    height: 200px;
+    border: 2px solid #2a2a2a;
+    margin-bottom: 1em;
+    padding: 0.5em 1em;
+    resize: none;
+  }
+  .add-post-btn {
+    padding: 0em 2em;
+    font-size: 1em;
+    border: 2px solid #2a2a2a;
+    color: #2a2a2a;
+    background: #fff;
+    cursor: pointer;
+  }
+}

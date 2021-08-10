@@ -55,6 +55,25 @@
   flex-direction: column;
   header {
     display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 1em;
+    width: 100%;
+    height: 10vh;
+    button {
+      width: 2.2em;
+      height: 2.2em;
+      border-radius: 50%;
+      background: #2a2a2a;
+      border: none;
+      cursor: pointer;
+      i {
+        color: linen;
+      }
+    }
   }
   .blog-name {
     margin-bottom: 0.5em;
@@ -89,6 +108,7 @@
   border: 1px solid #2a2a2a;
   margin-bottom: 1em;
   position: relative;
+  background: #2a2a2a;
   .post-header {
     position: absolute;
     top: 0;
@@ -101,6 +121,7 @@
     align-items: center;
     overflow: hidden;
     .post-title {
+      color: linen;
       font-size: 1.2em;
     }
   }
@@ -117,11 +138,14 @@
     justify-content: flex-end;
     align-items: center;
     padding-right: 0.5em;
+    p {
+      color: linen;
+    }
   }
-  .delete-btn {
+  i {
     position: absolute;
-    top: 0.5em;
-    right: 0.5em;
+    top: 0em;
+    right: 0em;
     background: #2a2a2a;
     width: 1.5em;
     height: 1.5em;
@@ -130,10 +154,7 @@
     place-items: center;
     cursor: pointer;
     z-index: 10000;
-    i {
-      color: linen;
-      font-size: 0.9em;
-    }
+    color: linen;
   }
 }
 // Post Section
@@ -199,5 +220,64 @@
     color: #2a2a2a;
     background: #fff;
     cursor: pointer;
+  }
+}
+.full-blog-post-section {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  z-index: 50000;
+  padding: 1em;
+  .close-div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 1em;
+    z-index: 10000;
+    button {
+      width: 2.2em;
+      height: 2.2em;
+      background: #2a2a2a;
+      border-radius: 50%;
+      border: none;
+      display: grid;
+      place-items: center;
+      cursor: pounter;
+      i {
+        color: linen;
+      }
+    }
+  }
+  header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-right: 1em;
+    h1 {
+      font-size: 1.5em;
+    }
+  }
+  .container {
+    width: 100%;
+    height: 80vh;
+    overflow-y: scroll;
+  }
+  .date {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
 }

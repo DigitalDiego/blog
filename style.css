@@ -35,6 +35,7 @@
 }
 
 .header .header-title {
+  cursor: pointer;
   font-family: "Pacifico", sans-serif;
 }
 
@@ -353,6 +354,26 @@
   .post .post-content {
     height: 200px;
   }
+  .post-section header {
+    height: 15vh;
+  }
+  .post-section header .close-post-section-btn {
+    width: 2.8em;
+    height: 2.8em;
+  }
+  .post-section .post-title {
+    width: 50%;
+  }
+  .post-section textarea {
+    width: 80%;
+  }
+  .blog-name-section header {
+    height: 15vh;
+  }
+  .blog-name-section header button {
+    width: 2.8em;
+    height: 2.8em;
+  }
 }
 
 @media only screen and (min-width: 1800px) {
@@ -361,6 +382,16 @@
   }
   .post-list {
     margin-top: 10vh;
+  }
+  .post-section header,
+  .blog-name-section header {
+    height: 10vh;
+  }
+  .post-section .post-title {
+    width: 20%;
+  }
+  .post-section textarea {
+    width: 50%;
   }
 }
 /*# sourceMappingURL=style.css.map */

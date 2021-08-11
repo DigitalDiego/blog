@@ -24,6 +24,7 @@
   background: linen;
   box-shadow: 0 1px 10px rgb(45, 54, 68);
   .header-title {
+    cursor: pointer;
     font-family: "Pacifico", sans-serif;
   }
   button {
@@ -269,6 +270,30 @@
       height: 200px;
     }
   }
+  .post-section {
+    header {
+      height: 15vh;
+      .close-post-section-btn {
+        width: 2.8em;
+        height: 2.8em;
+      }
+    }
+    .post-title {
+      width: 50%;
+    }
+    textarea {
+      width: 80%;
+    }
+  }
+  .blog-name-section {
+    header {
+      height: 15vh;
+      button {
+        width: 2.8em;
+        height: 2.8em;
+      }
+    }
+  }
 }
 @media only screen and (min-width: 1800px) {
   .header {
@@ -276,5 +301,19 @@
   }
   .post-list {
     margin-top: 10vh;
+  }
+  .post-section,
+  .blog-name-section {
+    header {
+      height: 10vh;
+    }
+  }
+  .post-section {
+    .post-title {
+      width: 20%;
+    }
+    textarea {
+      width: 50%;
+    }
   }
 }

@@ -4,11 +4,11 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  color: #2a2a2a;
+  color: #f0bb90;
 }
 
 * body {
-  background: linen;
+  background: #0e5b6e;
   overflow: hidden;
 }
 
@@ -29,9 +29,9 @@
   top: 0;
   right: 0;
   z-index: 20000;
-  background: linen;
-  -webkit-box-shadow: 0 1px 10px #2d3644;
-          box-shadow: 0 1px 10px #2d3644;
+  background: #0e5b6e;
+  -webkit-box-shadow: 0 1px 10px rgba(45, 54, 68, 0.5);
+          box-shadow: 0 1px 10px rgba(45, 54, 68, 0.5);
 }
 
 .header .header-title {
@@ -47,12 +47,12 @@
   place-items: center;
   border-radius: 50%;
   border: none;
-  background: #2a2a2a;
+  background: #f0bb90;
   cursor: pointer;
 }
 
 .header button i {
-  color: linen;
+  color: #0e5b6e;
 }
 
 .blog-name-section {
@@ -68,7 +68,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(14, 91, 110, 0.8);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   z-index: 50000;
@@ -98,29 +98,33 @@
   width: 2.2em;
   height: 2.2em;
   border-radius: 50%;
-  background: #2a2a2a;
+  background: #f0bb90;
   border: none;
   cursor: pointer;
 }
 
 .blog-name-section header button i {
-  color: linen;
+  color: #0e5b6e;
 }
 
 .blog-name-section .blog-name {
   margin-bottom: 0.5em;
-  border: 2px solid #2a2a2a;
+  border: 2px solid #f0bb90;
   padding: 0.2em 0.5em;
   font-size: 1em;
+  outline: none;
+  color: #5a5a5a;
 }
 
 .blog-name-section .add-name-btn {
   font-size: 1em;
-  border: 2px solid #2a2a2a;
+  border: 2px solid #f0bb90;
   padding: 0 2em;
   cursor: pointer;
   background: #fff;
-  color: #2a2a2a;
+  color: #0e5b6e;
+  font-weight: bold;
+  outline: none;
 }
 
 .post-list {
@@ -147,10 +151,10 @@
 
 .post {
   width: 90vw;
-  border: 1px solid #2a2a2a;
   margin-bottom: 1em;
   position: relative;
-  background: #2a2a2a;
+  border: 2px solid #f0bb90;
+  background: #fff;
 }
 
 .post .post-header {
@@ -170,7 +174,7 @@
 }
 
 .post .post-header .post-title {
-  color: linen;
+  color: #0e5b6e;
   font-size: 1.2em;
 }
 
@@ -192,13 +196,13 @@
 
 .post .post-content::-webkit-scrollbar-thumb {
   border-radius: 50px;
-  background: linen;
+  background: #0e5b6e;
 }
 
 .post .post-content .post-text {
   width: 100%;
   height: 100%;
-  color: linen;
+  color: #0e5b6e;
 }
 
 .post .post-date {
@@ -217,7 +221,7 @@
 }
 
 .post .post-date p {
-  color: linen;
+  color: #0e5b6e;
 }
 
 .post i {
@@ -232,7 +236,7 @@
   place-items: center;
   cursor: pointer;
   z-index: 10000;
-  color: linen;
+  color: #0e5b6e;
 }
 
 .post-section {
@@ -242,7 +246,7 @@
   top: 0;
   right: 0;
   z-index: 30000;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(14, 91, 110, 0.8);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   display: none;
@@ -286,39 +290,44 @@
   display: grid;
   place-items: center;
   border: none;
-  background: #2a2a2a;
+  background: #f0bb90;
   cursor: pointer;
 }
 
 .post-section header .close-post-section-btn i {
-  color: linen;
+  color: #0e5b6e;
 }
 
 .post-section .post-title {
-  width: 100%;
+  width: 80%;
   padding: 0.2em 0.5em;
   font-size: 1em;
-  border: 2px solid #2a2a2a;
+  border: 2px solid #f0bb90;
   background: #fff;
   margin-bottom: 1em;
+  color: #5a5a5a;
+  outline: none;
 }
 
 .post-section textarea {
   width: 100%;
   height: 200px;
-  border: 2px solid #2a2a2a;
+  border: 2px solid #f0bb90;
   margin-bottom: 1em;
   padding: 0.5em 1em;
   resize: none;
+  color: #5a5a5a;
+  outline: none;
 }
 
 .post-section .add-post-btn {
   padding: 0em 2em;
   font-size: 1em;
-  border: 2px solid #2a2a2a;
-  color: #2a2a2a;
+  border: 2px solid #f0bb90;
+  color: #0e5b6e;
   background: #fff;
   cursor: pointer;
+  font-weight: bold;
 }
 
 @media only screen and (min-width: 800px) {
@@ -346,7 +355,7 @@
   }
   .post-list::-webkit-scrollbar-thumb {
     border-radius: 50px;
-    background: #2a2a2a;
+    background: #f0bb90;
   }
   .post {
     width: 80vw;

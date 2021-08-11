@@ -11,24 +11,18 @@ const headerTitle = document.getElementById('header-title');
     blogName = document.getElementById('blog-name');
     addNameBtn = document.getElementById('add-name-btn');
     closeNameSectionBtn = document.getElementById('close-name-section-btn');
-    var blogTitle = '';
-    const checkForTitle = () => {
-        if(blogTitle == ''){
-            blogNameSection.style.display = 'flex'
-        };
-    };
-    checkForTitle();
-    addNameBtn.addEventListener('click', (event) => {
-        event.preventDefault();
-        if(blogName.value.length < 1)return;
-        blogTitle = blogName.value;
-        headerTitle.innerHTML = `${blogTitle}`
-        blogName.value = '';
-        blogNameSection.style.display = 'none';
-    });
-    headerTitle.addEventListener('click', () => {
-        blogNameSection.style.display = 'flex';
-        closeNameSectionHeader.style.display = 'flex'; 
+const body = document.querySelector('body');
+addNameBtn.addEventListener('click', (event) => {
+    event.preventDefault();
+    if(blogName.value.length < 1)return;
+    headerTitle.innerHTML = blogName.value;
+    titleOfTheBlog = blogName.value;
+    blogNameSection.remove();
+    localStorage.setItem("blog", headerTitle.innerHTML);
+});
+headerTitle.addEventListener('click', () => {
+    blogNameSection.style.display = 'flex';
+    closeNameSectionHeader.style.display = 'flex'; 
 });
 closeNameSectionBtn.addEventListener('click', () => {
     blogNameSection.style.display = 'none'
@@ -89,6 +83,7 @@ const addPost = (event) => {
     postSection.style.display = 'none';
     postTitle.value = '';
     postText.value = '';
+    localStorage.setItem("item", postList.innerHTML);
 }
 postSectionBtn.addEventListener('click', () => {
     postSection.style.display = 'flex'
@@ -97,3 +92,11 @@ closePostSectionBtn.addEventListener('click', () => {
     postSection.style.display = 'none';
 })
 addPostBtn.addEventListener('click', addPost);
+const blog = localStorage.getItem("blog");
+const item = localStorage.getItem("item");
+if(item) {
+    postList.innerHTML = item;
+}
+if(blog){
+    headerTitle.innerHTML = blog;
+}

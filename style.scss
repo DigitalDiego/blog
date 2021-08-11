@@ -3,9 +3,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  color: #2a2a2a;
+  color: #f0bb90;
   body {
-    background: linen;
+    background: #0e5b6e;
     overflow: hidden;
   }
 }
@@ -21,8 +21,8 @@
   top: 0;
   right: 0;
   z-index: 20000;
-  background: linen;
-  box-shadow: 0 1px 10px rgb(45, 54, 68);
+  background: #0e5b6e;
+  box-shadow: 0 1px 10px rgba(45, 54, 68, 0.5);
   .header-title {
     cursor: pointer;
     font-family: "Pacifico", sans-serif;
@@ -34,10 +34,10 @@
     place-items: center;
     border-radius: 50%;
     border: none;
-    background: #2a2a2a;
+    background: #f0bb90;
     cursor: pointer;
     i {
-      color: linen;
+      color: #0e5b6e;
     }
   }
 }
@@ -51,7 +51,7 @@
   display: none;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(14, 91, 110, 0.8);
   backdrop-filter: blur(10px);
   z-index: 50000;
   flex-direction: column;
@@ -69,27 +69,31 @@
       width: 2.2em;
       height: 2.2em;
       border-radius: 50%;
-      background: #2a2a2a;
+      background: #f0bb90;
       border: none;
       cursor: pointer;
       i {
-        color: linen;
+        color: #0e5b6e;
       }
     }
   }
   .blog-name {
     margin-bottom: 0.5em;
-    border: 2px solid #2a2a2a;
+    border: 2px solid #f0bb90;
     padding: 0.2em 0.5em;
     font-size: 1em;
+    outline: none;
+    color: #5a5a5a;
   }
   .add-name-btn {
     font-size: 1em;
-    border: 2px solid #2a2a2a;
+    border: 2px solid #f0bb90;
     padding: 0 2em;
     cursor: pointer;
     background: #fff;
-    color: #2a2a2a;
+    color: #0e5b6e;
+    font-weight: bold;
+    outline: none;
   }
 }
 // Post List
@@ -108,10 +112,10 @@
 // Post
 .post {
   width: 90vw;
-  border: 1px solid #2a2a2a;
   margin-bottom: 1em;
   position: relative;
-  background: #2a2a2a;
+  border: 2px solid #f0bb90;
+  background: #fff;
   .post-header {
     width: 100%;
     height: 50px;
@@ -121,7 +125,7 @@
     align-items: center;
     overflow: hidden;
     .post-title {
-      color: linen;
+      color: #0e5b6e;
       font-size: 1.2em;
     }
   }
@@ -139,12 +143,12 @@
     }
     &::-webkit-scrollbar-thumb {
       border-radius: 50px;
-      background: linen;
+      background: #0e5b6e;
     }
     .post-text {
       width: 100%;
       height: 100%;
-      color: linen;
+      color: #0e5b6e;
     }
   }
   .post-date {
@@ -155,7 +159,7 @@
     align-items: center;
     padding-right: 0.5em;
     p {
-      color: linen;
+      color: #0e5b6e;
     }
   }
   i {
@@ -169,7 +173,7 @@
     place-items: center;
     cursor: pointer;
     z-index: 10000;
-    color: linen;
+    color: #0e5b6e;
   }
 }
 // Post Section
@@ -180,7 +184,7 @@
   top: 0;
   right: 0;
   z-index: 30000;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(14, 91, 110, 0.8);
   backdrop-filter: blur(10px);
   display: none;
   justify-content: center;
@@ -205,36 +209,41 @@
       display: grid;
       place-items: center;
       border: none;
-      background: #2a2a2a;
+      background: #f0bb90;
       cursor: pointer;
       i {
-        color: linen;
+        color: #0e5b6e;
       }
     }
   }
   .post-title {
-    width: 100%;
+    width: 80%;
     padding: 0.2em 0.5em;
     font-size: 1em;
-    border: 2px solid #2a2a2a;
+    border: 2px solid #f0bb90;
     background: #fff;
     margin-bottom: 1em;
+    color: #5a5a5a;
+    outline: none;
   }
   textarea {
     width: 100%;
     height: 200px;
-    border: 2px solid #2a2a2a;
+    border: 2px solid #f0bb90;
     margin-bottom: 1em;
     padding: 0.5em 1em;
     resize: none;
+    color: #5a5a5a;
+    outline: none;
   }
   .add-post-btn {
     padding: 0em 2em;
     font-size: 1em;
-    border: 2px solid #2a2a2a;
-    color: #2a2a2a;
+    border: 2px solid #f0bb90;
+    color: #0e5b6e;
     background: #fff;
     cursor: pointer;
+    font-weight: bold;
   }
 }
 @media only screen and (min-width: 800px) {
@@ -261,7 +270,7 @@
     }
     &::-webkit-scrollbar-thumb {
       border-radius: 50px;
-      background: #2a2a2a;
+      background: #f0bb90;
     }
   }
   .post {

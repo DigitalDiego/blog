@@ -77,8 +77,9 @@ const addPost = (event) => {
         btn.addEventListener('click', () => {
             const item = btn.parentElement;
             item.remove();
-        })
-    })
+            localStorage.removeItem("item");
+        });
+    });
     // Reset
     postSection.style.display = 'none';
     postTitle.value = '';

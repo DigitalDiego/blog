@@ -24,7 +24,8 @@ const App = () => {
     event.preventDefault()
     setClosePswdForm(!closePswdForm)
   }
-  const closeBtn = () => {
+  const closeBtn = (event) => {
+    event.preventDefault()
       setCloseForm(!closeForm)
   }
   const logIn = () => {

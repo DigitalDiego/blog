@@ -56,7 +56,7 @@ const App = () => {
       <GlobalStyle/>
       <Nav loggedIn={loggedIn} toggle={toggle} closeBtn={closeBtn} logIn={logIn} password={password} pswdBtn={pswdBtn} sideMenu={sideMenu} navBtn={navBtn}/>
       <Routes>
-        <Route path="/" exact element={<PostContainer posts={posts}/>}/>
+        <Route path="/blog" exact element={<PostContainer posts={posts}/>}/>
         <Route path={`/post/:id`} element={<PostInfo posts={posts}/>}/>
       </Routes>
       <PostForm post={post} setPost={setPost} isOpen={isOpen} toggle={toggle} setPosts={setPosts} posts={posts} setIsOpen={setIsOpen}/>

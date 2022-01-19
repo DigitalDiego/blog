@@ -80,7 +80,7 @@ const Container = styled.header`
 const Nav = ({loggedIn, toggle, closeBtn, logIn, pswdBtn, sideMenu, navBtn}) => {
     return (
         <Container loggedIn={loggedIn} sideMenu={sideMenu}>
-            <Link to="/">
+            <Link to="/blog">
                 <h1>My World</h1>
             </Link>
             {loggedIn === true ? 
